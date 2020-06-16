@@ -6,7 +6,7 @@
   "scripts": {
     "start": "parcel start index.html",
     "prebuild": "rimraf .cache dist",
-    "build": "parcel build index.html --public-url /2048_V1/dist/"
+    "build": "parcel build index.html --public-url /2048_V1/"
   },
   "author": "",
   "license": "ISC",
