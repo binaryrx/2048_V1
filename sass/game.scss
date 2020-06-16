@@ -40,7 +40,6 @@ html {
         
         section{
             text-align: center;
-            padding-top:45%;
             
             .header{
                 display:flex;
@@ -229,6 +228,8 @@ html {
     html {
         font-size: $LD-base-fontSize;
 
+        
+
       /* Modules will scale with document (REM)*/
         .header {
             font-size: 1.5rem;
@@ -372,6 +373,11 @@ html {
 
     html {
         font-size: $SM-base-fontSize;
+        
+        section {
+          padding-top:45%;
+
+        }
 
       /* Modules will scale with document (REM)*/
         .header {
