@@ -280,6 +280,9 @@ document.addEventListener('DOMContentLoaded', () => {
                 keyRight();
                 alert('right')
 
+
+
+                
             }                       
         } else {
             if ( yDiff > 0 ) {
