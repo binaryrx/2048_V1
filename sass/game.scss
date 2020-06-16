@@ -40,15 +40,15 @@ html {
         
         section{
             text-align: center;
-
+            padding-top:45%;
+            
             .header{
                 display:flex;
                 flex-flow:row nowrap;
                 justify-content:space-between;
                 align-items: center;
-                padding-top:35%;
+
                 .title{
-                    
                     font-size: 2.5em;
                     color:#776e65;
                     font-weight: bold;
