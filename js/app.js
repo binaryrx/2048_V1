@@ -274,17 +274,23 @@ document.addEventListener('DOMContentLoaded', () => {
             if ( xDiff > 0 ) {
                 /* left swipe */ 
                 keyLeft();
+                alert('left')
             } else {
                 /* right swipe */
                 keyRight();
+                alert('right')
+
             }                       
         } else {
             if ( yDiff > 0 ) {
                 /* up swipe */ 
                 keyUp();
+                alert('up')
+
             } else { 
                 /* down swipe */
                 keyDown();
+                alert('down')
             }                                                                 
         }
         /* reset values */
