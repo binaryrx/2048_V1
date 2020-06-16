@@ -1,0 +1,399 @@
+@import './vars.scss';
+
+
+ /* Modules will scale with document (REM)*/
+.header {
+font-size: 1.5rem;
+}
+.footer {
+font-size: 0.75rem;
+}
+.sidebar {
+font-size: 0.85rem;
+}
+  
+/* Type will scale with modules (EM) */
+h1 {
+font-size: 3em;
+}
+h2 {
+font-size: 2.5em;
+}
+h3 {
+font-size: 2em;
+}
+
+
+
+//General
+html {
+    font-size: $D-base-fontSize;
+    font-family: "Clear Sans", "Helvetica Neue", Arial, sans-serif;
+
+    body{
+        display: flex;
+        width:100vw;
+        height:100vh;
+        align-items: center;
+        justify-content: center;
+        background:$base-backgroundColor;
+        
+        section{
+            text-align: center;
+
+            .header{
+                display:flex;
+                flex-flow:row nowrap;
+                justify-content:space-between;
+                align-items: center;
+                .title{
+                    
+                    font-size: 2.5em;
+                    color:#776e65;
+                    font-weight: bold;
+                    padding: 0;
+                    margin:0;
+                }
+                .score-container {
+                    width:29%;
+                    display: flex;
+                    flex-flow: column;
+                    background: #bbada0;
+                    padding: 1% 4%;
+                    font-weight: bold;
+                    border-radius: 3px;
+                    color: white;
+                    align-self: end;
+                    .score-title{
+                        font-weight:400;
+                        font-size:0.75em;
+                    }
+                    .score{
+                        font-size:1.8em;
+                    }
+                }
+            }
+            .grid {
+                display:flex;
+                flex-flow:wrap;
+                width: 31vw;
+                height: 31vw;
+                justify-content: space-evenly;
+                align-content: space-evenly;
+                background-color: #bbada0;
+                border-radius: 0.4rem;
+
+                div{
+                    width:100px;
+                    height:100px;
+                    background-color:rgba(238, 228, 218, 0.35);
+
+                    .num{
+                        position: relative;
+                        display: flex;
+                        flex-flow:nowrap;
+                        align-items:center;
+                        justify-content:center;
+                        width:100%;
+                        height:100%;
+                        font-size:3em;
+                        font-weight: 600;
+                        // &-0{
+                        //     background-color:yellow;
+                        // }
+                        // &-2{
+                        //     background-color:orange
+                        // }
+                        
+                    }
+                    span[data-num="0"]{ background-color:rgba(238, 228, 218, 0.35);
+                        &:before{ content: ""; }
+                    }
+                    span[data-num="2"]{ background-color:#eee4da;
+                        &:before{ content: "2"; }
+                    }
+                    span[data-num="4"]{ background-color:#ede0c8;
+                        &:before{    content: "4"; }
+                    }
+                    span[data-num="8"]{ color:#f9f6f2; background-color:#f2b179;
+                        &:before{    content: "8"; }
+                    }
+                    span[data-num="16"]{ color:#f9f6f2; background-color:#f59563;
+                        &:before{    content: "16"; }
+                    }
+                    span[data-num="32"]{ color:#f9f6f2; background-color:#f67c5f;
+                        &:before{    content: "32"; }
+                    }
+                    span[data-num="64"]{ color:#f9f6f2; background-color:#f65e3b;
+                        &:before{    content: "64"; }
+                    }
+                    span[data-num="128"]{ color:#f9f6f2; background-color:#edcf72;
+                        &:before{    content: "128"; }
+                    }
+                    span[data-num="256"]{ color:#f9f6f2; background-color:#edcc61;
+                        &:before{    content: "256"; }
+                    }
+                    span[data-num="512"]{ color:#f9f6f2; background-color:#edc850;
+                        &:before{    content: "512"; }
+                    }
+                    span[data-num="1024"]{ color:#f9f6f2; background-color:#edc53f;
+                        &:before{    content: "1024"; }
+                    }
+                    span[data-num="2048"]{ color:#f9f6f2; background-color:#edc22e;
+                        &:before{    content: "2048"; }
+                    }
+                   
+                }
+            }
+        }
+    }
+    
+
+
+
+
+}
+ 
+
+
+
+
+
+
+
+
+/* 
+  Media Queries:
+  
+  ##Device = Desktops
+  ##Screen = 1281px to higher resolution desktops
+*/
+
+@media (min-width: 1281px) {
+  
+    html {
+        font-size: $D-base-fontSize;
+
+        body{
+            background: $base-backgroundColor;
+            section{
+             
+            }
+        }
+        
+
+
+
+
+
+      /* Modules will scale with document (REM)*/
+        .header {
+            font-size: 1.5rem;
+          }
+        .footer {
+        font-size: 0.75rem;
+        }
+        .sidebar {
+        font-size: 0.85rem;
+        }
+          
+    /* Type will scale with modules (EM) */
+        h1 {
+        font-size: 3em;
+        }
+        h2 {
+        font-size: 2.5em;
+        }
+        h3 {
+        font-size: 2em;
+        }
+
+    }
+
+}
+  
+
+
+
+
+
+
+  /* 
+    ##Device = Laptops, Desktops
+    ##Screen = B/w 1025px to 1280px
+  */
+  
+@media (min-width: 1025px) and (max-width: 1280px) {
+    
+    html {
+        font-size: $LD-base-fontSize;
+
+      /* Modules will scale with document (REM)*/
+        .header {
+            font-size: 1.5rem;
+          }
+        .footer {
+        font-size: 0.75rem;
+        }
+        .sidebar {
+        font-size: 0.85rem;
+        }
+          
+    /* Type will scale with modules (EM) */
+        h1 {
+        font-size: 3em;
+        }
+        h2 {
+        font-size: 2.5em;
+        }
+        h3 {
+        font-size: 2em;
+        }
+
+    }
+    
+}
+  
+  /* 
+    ##Device = Tablets, Ipads (portrait)
+    ##Screen = B/w 768px to 1024px
+  */
+  
+@media (min-width: 768px) and (max-width: 1024px) {
+    
+    html {
+        font-size: $TP-base-fontSize;
+
+      /* Modules will scale with document (REM)*/
+        .header {
+            font-size: 1.5rem;
+          }
+        .footer {
+        font-size: 0.75rem;
+        }
+        .sidebar {
+        font-size: 0.85rem;
+        }
+          
+    /* Type will scale with modules (EM) */
+        h1 {
+        font-size: 3em;
+        }
+        h2 {
+        font-size: 2.5em;
+        }
+        h3 {
+        font-size: 2em;
+        }
+
+    }
+    
+}
+  
+  /* 
+    ##Device = Tablets, Ipads (landscape)
+    ##Screen = B/w 768px to 1024px
+  */
+  
+@media (min-width: 768px) and (max-width: 1024px) and (orientation: landscape) {
+    
+    html {
+        font-size: $TL-base-fontSize;
+
+      /* Modules will scale with document (REM)*/
+        .header {
+            font-size: 1.5rem;
+          }
+        .footer {
+        font-size: 0.75rem;
+        }
+        .sidebar {
+        font-size: 0.85rem;
+        }
+          
+    /* Type will scale with modules (EM) */
+        h1 {
+        font-size: 3em;
+        }
+        h2 {
+        font-size: 2.5em;
+        }
+        h3 {
+        font-size: 2em;
+        }
+
+    }
+    
+}
+  
+  /* 
+    ##Device = Low Resolution Tablets, Mobiles (Landscape)
+    ##Screen = B/w 481px to 767px
+  */
+  
+@media (min-width: 481px) and (max-width: 767px) {
+    
+    html {
+        font-size: $TML-base-fontSize;
+
+      /* Modules will scale with document (REM)*/
+        .header {
+            font-size: 1.5rem;
+          }
+        .footer {
+        font-size: 0.75rem;
+        }
+        .sidebar {
+        font-size: 0.85rem;
+        }
+          
+    /* Type will scale with modules (EM) */
+        h1 {
+        font-size: 3em;
+        }
+        h2 {
+        font-size: 2.5em;
+        }
+        h3 {
+        font-size: 2em;
+        }
+
+    }
+    
+}
+  
+  /* 
+    ##Device = Most of the Smartphones Mobiles (Portrait)
+    ##Screen = B/w 320px to 479px
+  */
+  
+@media (min-width: 320px) and (max-width: 480px) {
+
+    html {
+        font-size: $SM-base-fontSize;
+
+      /* Modules will scale with document (REM)*/
+        .header {
+            font-size: 1.5rem;
+          }
+        .footer {
+        font-size: 0.75rem;
+        }
+        .sidebar {
+        font-size: 0.85rem;
+        }
+          
+    /* Type will scale with modules (EM) */
+        h1 {
+        font-size: 3em;
+        }
+        h2 {
+        font-size: 2.5em;
+        }
+        h3 {
+        font-size: 2em;
+        }
+
+    }
+
+}
