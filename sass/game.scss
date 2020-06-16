@@ -76,16 +76,16 @@ html {
             .grid {
                 display:flex;
                 flex-flow:wrap;
-                width: 31vw;
-                height: 31vw;
+                width: 30em;
+                height: 30em;
                 justify-content: space-evenly;
                 align-content: space-evenly;
                 background-color: #bbada0;
                 border-radius: 0.4rem;
 
                 div{
-                    width:100px;
-                    height:100px;
+                    width: 6.3em;
+                    height: 6.3em;
                     background-color:rgba(238, 228, 218, 0.35);
 
                     .num{
